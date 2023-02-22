@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <meta property="og:image" content="https://digitaldiplomat.me/assets/logo.png"/>
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <title>Bryn :: d1pl0mat</title>
+  </head>
+
+  <body>
+    <header alt="Diplomat">
+      d<span id="i1">1</span>pl<span id="o0">0</span>mat
+    </header>
+    
+    <script>
+      /* Page Init */
+      window.darkMode = true; // Dark mode is always default for this site
+
+      // "Glitch" effect on "i" and "o"
+      console.log(
+        "I've set the 'i' and 'o' in the title bar to \"glitch\" at random times.\n"
+        + "The intervals for this are shown below for debug purposes.\n"
+        + "Also, if you found your way in here I immediately assume you're cool.\n"
+        + "Let's chat sometime! - bryn.miller@disroot.org"
+      );
+      function getRandom(max, min) {
+        return ((Math.random() * (max - min)) + min) << 0;
+      }
+      var i = document.getElementById("i1");
+      var o = document.getElementById("o0");
+      // Save intervals for debug purposes, show in dev console.
+      var toI = setInterval(() => i.innerText = "i", intI = getRandom(2000, 2500));
+      var toO = setInterval(() => o.innerText = "o", intO = getRandom(2600, 3000));
+      var to1 = setInterval(() => i.innerText = "1", int1 = getRandom(2600, 3000));
+      var to0 = setInterval(() => o.innerText = "0", int0 = getRandom(2000, 2500));
+
+      console.log("[i, 1] interval:\n\t[" + intI + ", " + int1 + "]");
+      console.log("[o, 0] interval:\n\t[" + intO + ", " + int0 + "]");
+    </script>
+
+    <h1>Hai, I'm Bryn ^^</h1>
+
+    <hr/>
+
+    <div class="content">
+
+      <!-- First Column -->
+
+<pre id="about">
+<span class="linum">  1 </span><span class="comment">/* About Me */</span>
+<span class="linum">  2 </span><span class="keyword">var</span> pronouns = <span class="string">"she/her"</span>;
+<span class="linum">  3 </span><span class="keyword">var</span> age = <span class="number">24</span>;
+<span class="linum">  4 </span><span class="keyword">var</span> location = <span class="string">"Pittsburgh, PA"</span>;
+<span class="linum">  5 </span><span class="keyword">var</span> interests = [
+<span class="linum">  6 </span>  <span class="string">"free open-source software"</span>,
+<span class="linum">  7 </span>  <span class="string">"queer liberation"</span>,
+<span class="linum">  8 </span>  <span class="string">"relationship anarchy"</span>,
+<span class="linum">  9 </span>  <span class="string">"mental health advocacy"</span>,
+<span class="linum"> 10 </span>  <span class="string">"indie & pop punk music"</span>
+<span class="linum"> 11 </span>];
+<span class="linum"> 12 </span><span class="keyword">function</span> screm() {
+<span class="linum"> 13 </span>  console.<span class="function">log</span>(<span class="string">"AAAAAAAAAAAAAAAA"</span>);
+<span class="linum"> 14 </span>  <span class="function">screm</span>(); <span class="comment">// Scream eternally.</span>
+<span class="linum"> 15 </span>}
+<span class="linum"> 16 </span></pre>
+
+      <!-- 2nd Column -->
+      <img id="selfie" alt="A self-portrait of me sitting in an office chair." src="assets/professional-v2.jpg" />
+
+    </div>
+
+    <hr/>
+
+    <p>
+      I am
+      <span class="prideflag" title="transfemme" style="color: black"><strong style="background-color: #55cdfc">tr</strong><strong style="background-color: #f7a8b8">an</strong><strong style="background-color: white">sf</strong><strong style="background-color: #f7a8b8">em</strong><strong style="background-color: #55cdfc">me</strong></span>,
+      <span class="prideflag" title="bisexual "style="color: white"><strong style="background-color: #D00070">bis</strong><strong style="background-color: #8c4799">ex</strong><strong style="background-color: #0032a0;">ual</strong></span>,
+     and
+     <span class="prideflag" title="polyamorous" style="color: white"><strong style="background-color: white; color: #fcbf00">po</strong><strong style="background-color: #009fe3">lya</strong><strong style="background-color: #e50051">mor</strong><strong style="background-color: #340c46">ous</strong></span>.<br/>
+      I'm not interested in debating the validity of any of these things.
+    </p>
+
+    <p>
+      I regularly share and create mature content, and I discuss ideologies that are often considered radical.<br/>
+      <strong style="background-color: darkred; color: white">Links marked with a dagger (&dagger;) are not recommended for anyone under the age of 18. Viewer discretion is advised.</strong>
+    </p>
+
+    <p>You can find me in these places:
+      <ul>
+        <li><a href="https://kolektiva.social/@d1pl0mat">Mastodon</a><sup title="18+ Content">&dagger;</sup></li>
+        <ul>
+          <li id="mas-secondary"><a rel="me" href="https://mas.to/@d1pl0mat">(Secondary "Professional" Account, Safe For Work)</a></li>
+        </ul>
+        <li><a href="https://brynmiller.substack.com/">Substack</a></li>
+        <li><a href="https://github.com/digital-diplomat">GitHub</a></li>
+        <li><a href="https://reddit.com/user/d1pl0mat_">Reddit</a><sup title="18+ Content">&dagger;</sup> <aside>// Used infrequently</aside></li>
+        <li>
+          <a class="strike" onclick="gotoTwitter()" style="cursor: pointer;">Twitter</a><sup title="18+ Content">&dagger;</sup>
+          <aside>
+            // Unused except to mirror my Mastodon content. Please follow me there instead.
+          </aside>
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+    <h2>Recent Articles & RSS</h2>
+
+    <a href="https://brynmiller.substack.com/p/on-unicorn-trapping-ff77f5bea606">
+      <h3>2023-01-21 :: On Unicorn Trapping</h3>
+    </a>
+    <p>
+      In polyamory, "unicorn hunting" is essentially one of our cardinal sins.
+      But what happens when an unbalanced dynamic forms unintentionally?
+
+      <aside>
+        /* I had originally posted this article on 2023-01-19, but I edited it on the 21st to more accurately
+        reflect the current state of things, in addition to handling some stylistic cleanup. */
+      </aside>
+    </p>
+
+    <a href="https://brynmiller.substack.com/p/you-never-showed-any-signs-as-a-kid-4446754dfa72">
+      <h3>2023-01-18 :: "You Never Showed Any Signs As A Kid"</h3>
+    </a>
+    <p>The transgender experience is far from universal. Here's one perspective of my own.</p>
+
+    <a href="https://brynmiller.substack.com/embed">
+      <h2>Subscribe To My Substack Newsletter!</h2>
+    </a>
+
+  </body>
+  
+  <footer>
+    <script>
+      /* Show warning dialog before going to Twitter */
+      function gotoTwitter() {
+        if (confirm(`
+          This account is no longer used except to mirror my Mastodon account and occasionally respond to interactions with those posts.
+
+          I do not believe Twitter should be used by any reasonable person, given the current state of things, but unfortunately freelance work requires exposure.
+
+          If you don't want to create a Mastodon account and still want to follow me on Twitter, you're welcome to do so. Just understand that my engagement there is minimal.
+
+          Click OK to proceed to Twitter, or Cancel if you've changed your mind.
+          `)) {
+            window.location.href = "https://twitter.com/brynfren";
+        }
+      }
+
+      /* Toggle dark mode via :] logo */
+      function toggleDark() {
+        let root = document.querySelector(':root');
+        let logos = document.querySelectorAll("footer > a > img");
+        window.darkMode = !window.darkMode;
+
+        if (!window.darkMode) {
+          root.style.setProperty("--bg-main", "white");
+          root.style.setProperty("--bg-accent", "#bfd");
+
+          root.style.setProperty("--blue", "#4cf");
+          root.style.setProperty("--teal", "#aff");
+          root.style.setProperty("--main-text", "black");
+
+          root.style.setProperty("--code", "black");
+          root.style.setProperty("--keyword", "darkblue");
+          root.style.setProperty("--number", "darkgoldenrod");
+          root.style.setProperty("--string", "darkmagenta");
+          root.style.setProperty("--function", "seagreen");
+          root.style.setProperty("--comment", "slategrey");
+          for (logo of logos) {
+            logo.style.filter = "brightness(0)";
+          }
+        } else {
+          root.style.setProperty("--bg-main", "black");
+          root.style.setProperty("--bg-accent", "#021");
+
+          root.style.setProperty("--blue", "#004");
+          root.style.setProperty("--teal", "#003028");
+          root.style.setProperty("--main-text", "#bbb");
+
+          root.style.setProperty("--code", "white");
+          root.style.setProperty("--keyword", "lightblue");
+          root.style.setProperty("--number", "goldenrod");
+          root.style.setProperty("--string", "pink");
+          root.style.setProperty("--function", "darkcyan");
+          root.style.setProperty("--comment", "darkslategrey");
+          for (logo of logos) {
+            logo.style.filter = "brightness(1)";
+          }
+        }
+      }
+    </script>
+    
+    <a rel="logo" title="Click to toggle dark mode!" onclick="toggleDark()">
+      <img src="assets/logo-white.png" id="logo" alt="diplomat logo" />
+    </a>
+
+    <a title="Twitter: @brynfren [DEPRECATED]" onclick="gotoTwitter()" style="cursor: pointer; opacity: 20%;">
+      <img src="assets/twitter-logo.png" alt="Twitter logo" />
+    </a>
+    
+    <a href="https://reddit.com/user/d1pl0mat_" title="Reddit: u/d1pl0mat_">
+      <img src="assets/reddit-logo.png" alt="Reddit logo" />
+    </a>
+
+    <a href="https://github.com/digital-diplomat" title="Github: digital-diplomat">
+      <img src="assets/github-logo.png" alt="GitHub logo" />
+    </a>
+
+    <a href="https://brynmiller.substack.com/" title="Substack: brynmiller">
+      <img src="assets/substack-logo.png" alt="Substack logo" />
+    </a>
+
+    <a rel="me" href="https://kolektiva.social/@d1pl0mat" title="Mastodon: @d1pl0mat@kolektiva.social">
+      <img src="assets/mastodon-logo.png" alt="Mastodon logo" />
+    </a>
+  </footer>
+
+</html>
