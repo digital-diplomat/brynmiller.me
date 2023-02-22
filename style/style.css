@@ -167,6 +167,23 @@ a:hover {
     color: var(--function);
 }
 
+#morgan {
+    color: #7F5CC0;
+}
+
+#morgan:hover {
+    color: #b9a2e4;
+}
+
+#tyke {
+    color: #ffabcd;
+    cursor: pointer;
+}
+
+#tyke:hover {
+    color: #ffeeee;
+}
+
 a > img:hover {
     opacity: 60%;
 }
