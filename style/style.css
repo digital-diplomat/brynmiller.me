@@ -191,6 +191,14 @@ a:hover {
     padding: 0;
 }
 
+li.top-level {
+    font-weight: bold;
+}
+
+li.date-range {
+    font-style: italic;
+}
+
 a > img:hover {
     opacity: 60%;
 }

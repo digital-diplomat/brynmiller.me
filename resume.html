@@ -42,40 +42,87 @@
       (Contact for full address if needed)
     </p>
 
-    <p style="text-align: center;">(This page is a placeholder for now and will be completed in the near future.)</p>
-
     <h2>Work Experience</h2>
 
     <ul>
-      <li>Job Title @ Location</li>
+      <li class="top-level">Technical Care Team Lead @ Guardian Protection</li>
       <ul>
-        <li>Start Date - End Date</li>
-        <li>This is where I'll type a responsibility I've had.</li>
-        <li>This is where I'll type another thing I did at this company.</li>
-        <li>The explanations of my job duties continue here.</li>
+        <li class="date-range">Warrendale, PA :: April 2022 - Present</li>
+        <li>Same as Technical Care Specialist (see below), plus the following:</li>
+        <li>
+          Assist Tech Care team with higher-level customer-facing issues, both
+          technical and clerical in nature
+        </li>
+        <li>
+          Handle escalated customer calls, discuss disputes over service rates
+          and times, employee behavior, and other grievances
+        </li>
+        <li>
+          Help create, enact, and promote plans and events to improve and
+          maintain team morale
+        </li>
+        <li>
+          Further assist with training and education for new hires, provide
+          ongoing assistance as needed
+        </li>
       </ul>
-      <li>Job Title @ Location</li>
+      <li class="top-level">Technical Care Specialist @ Guardian Protection</li>
       <ul>
-        <li>Start Date - End Date</li>
-        <li>This is where I'll type a responsibility I've had.</li>
-        <li>This is where I'll type another thing I did at this company.</li>
-        <li>The explanations of my job duties continue here.</li>
+        <li class="date-range">Warrendale, PA :: April 2021 - April 2022</li>
+        <li>
+          Assist security and automation customers with intermediate to advanced
+          technical issues over inbound and outbound phone calls
+        </li>
+        <li>
+          Schedule service appointments for issues that cannot be handled remotely
+        </li>
+        <li>Remotely program and adjust settings on customers' security equipment</li>
+        <li>Assist in the training and education of new hires</li>
       </ul>
-      <li>Job Title @ Location</li>
+      <li class="top-level">Mobile Sales Representative @ Best Buy</li>
       <ul>
-        <li>Start Date - End Date</li>
-        <li>This is where I'll type a responsibility I've had.</li>
-        <li>This is where I'll type another thing I did at this company.</li>
-        <li>The explanations of my job duties continue here.</li>
+        <li class="date-range">Cranberry Twp, PA :: July 2019 - April 2021</li>
+        <li>
+          Handle activation and sales of both upgraded and new cell phones on
+          AT&T, Verizon, and Sprint (at the time)
+        </li>
+        <li>
+          Assist customers in building a personalized tech solution, including
+          accessories and services
+        </li>
+        <li>
+          Meet monthly goals for sales, add-ons, and customer satisfaction
+        </li>
+        <li>
+          Learn and maintain knowledge of a wide variety of consumer
+          technologies, including those beyond cell phones
+        </li>
       </ul>
+      <li class="top-level">Patient Services Representative @ UPMC Bedford</li>
+      <ul>
+        <li class="date-range">Everett, PA :: February 2018 - July 2019</li>
+        <li>Register patients for outpatient services such as blood draws and medical imaging</li>
+        <li>
+          Assist patients and their families with requests and concerns, often
+          in times of distress
+        </li>
+        <li>
+          Handle filing and paperwork for confidential patient records
+        </li>
+        <li>
+          Answer and redirect phone calls through hospital switchboard, as well
+          as calling out emergencies.
+        </li>
+      </ul>
+      <li>Before this, worked in retail and food service.</li>
     </ul>
 
     <h2>Education</h2>
 
     <ul>
-      <li>Computer Science @ University of Pittsburgh - Johnstown</li>
+      <li class="top-level">Computer Science @ University of Pittsburgh - Johnstown</li>
       <ul>
-        <li>Fall 2015 - Spring 2019</li>
+        <li class="date-range">Fall 2015 - Spring 2019</li>
         <li>No Degree</li>
         <li>Participated in:</li>
         <ul>
@@ -83,9 +130,9 @@
           <li>Concert Band</li>
         </ul>
       </ul>
-      <li>Chestnut Ridge Senior High School</li>
+      <li class="top-level">Chestnut Ridge Senior High School</li>
       <ul>
-        <li>Graduated Summer 2015</li>
+        <li class="date-range">Graduated Summer 2015</li>
         <li>Participated in:</li>
         <ul>
           <li>National Honor Society</li>
@@ -98,13 +145,91 @@
     <h2>Skills</h2>
 
     <ul>
-      <li>Interpersonal Skills</li>
+      <li class="top-level">Technical Skills</li>
+      <ul>
+        <li>Specializes in Linux/FOSS</li>
+        <li>Hardware and Software Troubleshooting Experience (I "do my own stunts")</li>
+        <li>Extensive knowledge of mobile/cellular device troubleshooting (Best Buy)</li>
+        <li>Extensive customer-facing troubleshooting experience</li>
+      </ul>
+      <li class="top-level">Programming</li>
+      <ul>
+        <li>HTML/CSS/JavaScript (Intermediate, this website is coded by hand)</li>
+        <li>Scala, other JVM languages (Intermediate)</li>
+        <li>Some C++ and Rust (Basic)</li>
+        <li>Seeking opportunities to hone these skills!</li>
+      </ul>
+      <li class="top-level">Interpersonal Skills</li>
       <ul>
         <li>Customer service</li>
-        <li>Communication</li>
+        <li>Education, troubleshooting, and problem-solving (see Technical Skills)</li>
+        <li>Communication/Writing</li>
         <li>Leadership experience (Guardian Protection)</li>
       </ul>
     </ul>
 
   </body>
+
+  <footer>
+    <script>
+      /* Toggle dark mode via :] logo */
+      function toggleDark() {
+        let root = document.querySelector(':root');
+        let logos = document.querySelectorAll("footer > a > img");
+        window.darkMode = !window.darkMode;
+
+        if (!window.darkMode) {
+          root.style.setProperty("--bg-main", "white");
+          root.style.setProperty("--bg-accent", "#bfd");
+
+          root.style.setProperty("--blue", "#4cf");
+          root.style.setProperty("--teal", "#aff");
+          root.style.setProperty("--main-text", "black");
+
+          root.style.setProperty("--code", "black");
+          root.style.setProperty("--keyword", "darkblue");
+          root.style.setProperty("--number", "darkgoldenrod");
+          root.style.setProperty("--string", "darkmagenta");
+          root.style.setProperty("--function", "seagreen");
+          root.style.setProperty("--comment", "slategrey");
+          for (logo of logos) {
+            logo.style.filter = "brightness(0)";
+          }
+        } else {
+          root.style.setProperty("--bg-main", "black");
+          root.style.setProperty("--bg-accent", "#021");
+
+          root.style.setProperty("--blue", "#004");
+          root.style.setProperty("--teal", "#003028");
+          root.style.setProperty("--main-text", "#bbb");
+
+          root.style.setProperty("--code", "white");
+          root.style.setProperty("--keyword", "lightblue");
+          root.style.setProperty("--number", "goldenrod");
+          root.style.setProperty("--string", "pink");
+          root.style.setProperty("--function", "darkcyan");
+          root.style.setProperty("--comment", "darkslategrey");
+          for (logo of logos) {
+            logo.style.filter = "brightness(1)";
+          }
+        }
+      }
+    </script>
+    
+    <a rel="logo" title="Click to toggle dark mode!" onclick="toggleDark()">
+      <img src="assets/logo-white.png" id="logo" alt="diplomat logo" />
+    </a>
+
+    <a href="https://github.com/digital-diplomat" title="Github: digital-diplomat">
+      <img src="assets/github-logo.png" alt="GitHub logo" />
+    </a>
+
+    <a href="https://brynmiller.substack.com/" title="Substack: brynmiller">
+      <img src="assets/substack-logo.png" alt="Substack logo" />
+    </a>
+
+    <a rel="me" href="https://mas.to/@d1pl0mat" title="Mastodon: @d1pl0mat@mas.to">
+      <img src="assets/mastodon-logo.png" alt="Mastodon logo" />
+    </a>
+  </footer>
 </html>
