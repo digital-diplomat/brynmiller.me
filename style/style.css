@@ -191,6 +191,10 @@ a:hover {
     padding: 0;
 }
 
+#pubkey {
+    font-family: MesloLGS, monospace;
+}
+
 li.top-level {
     font-weight: bold;
 }
