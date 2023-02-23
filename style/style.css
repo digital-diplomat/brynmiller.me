@@ -184,6 +184,13 @@ a:hover {
     color: #ffeeee;
 }
 
+#demographic {
+    font-size: 125%;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+}
+
 a > img:hover {
     opacity: 60%;
 }
