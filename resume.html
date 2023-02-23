@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/style.css"/>
+    <meta property="og:image" content="https://digitaldiplomat.me/assets/logo.png"/>
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <title>Bryn Miller</title>
+  </head>
+
+  <body>
+    <header alt="Bryn Miller">
+      <a href="https://brynmiller.me">Bryn Mi<span id="lslash">ll</span>er</a>
+    </header>
+    
+    <script>
+      /* Page Init */
+      window.darkMode = true; // Dark mode is always default for this site
+
+      // "Glitch" effect on "ll"
+      console.log(
+        "I've set the 'll' in the title bar to \"glitch\" at random times.\n"
+        + "The intervals for this are shown below for debug purposes.\n"
+        + "Also, if you found your way in here I immediately assume you're cool.\n"
+        + "Let's chat sometime! - bryn.miller@disroot.org"
+      );
+      function getRandom(max, min) {
+        return ((Math.random() * (max - min)) + min) << 0;
+      }
+      var l = document.getElementById("lslash");
+      // Save intervals for debug purposes, show in dev console.
+      var toL = setInterval(() => l.innerText = "ll", intL = getRandom(2600, 3000));
+      var toSlash = setInterval(() => l.innerText = "//", intSlash = getRandom(2000, 2500));
+
+      console.log("[i, 1] interval:\n\t[" + intI + ", " + int1 + "]");
+      console.log("[o, 0] interval:\n\t[" + intL + ", " + intSlash + "]");
+    </script>
+
+    <h1>Skills and Job History Coming Soon!</h1>
+  </body>
+</html>
