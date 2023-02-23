@@ -197,6 +197,7 @@ a:hover {
 
 li.top-level {
     font-weight: bold;
+    margin-top: 20px;
 }
 
 li.date-range {
@@ -247,6 +248,7 @@ li {
     list-style-type: square;
     list-style-position: outside;
     margin-left: 0%;
+    margin-bottom: 8px;
 }
 
 ::marker {
