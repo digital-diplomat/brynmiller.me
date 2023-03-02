@@ -193,6 +193,7 @@ a:hover {
 
 #pubkey {
     font-family: MesloLGS, monospace;
+    font-size: 0.75em;
 }
 
 li.top-level {
