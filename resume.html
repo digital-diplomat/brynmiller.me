@@ -9,7 +9,7 @@
 
   <body>
     <header alt="Bryn Miller">
-      <a href="https://brynmiller.me">Bryn Mi<span id="lslash">ll</span>er</a>
+      <a href="https://brynmiller.me">Bryn M<span id="lslash">ill</span>er</a>
     </header>
     
     <script>
@@ -18,7 +18,7 @@
 
       // "Glitch" effect on "ll"
       console.log(
-        "I've set the 'll' in the title bar to \"glitch\" at random times.\n"
+        "I've set the 'ill' in the title bar to \"glitch\" at random times.\n"
         + "The intervals for this are shown below for debug purposes.\n"
         + "Also, if you found your way in here I immediately assume you're cool.\n"
         + "Let's chat sometime! - bryn.miller@disroot.org"
@@ -28,8 +28,8 @@
       }
       var l = document.getElementById("lslash");
       // Save intervals for debug purposes, show in dev console.
-      var toL = setInterval(() => l.innerText = "ll", intL = getRandom(2600, 3000));
-      var toSlash = setInterval(() => l.innerText = "//", intSlash = getRandom(2000, 2500));
+      var toL = setInterval(() => l.innerText = "ill", intL = getRandom(2600, 3000));
+      var toSlash = setInterval(() => l.innerText = "://", intSlash = getRandom(2000, 2500));
 
       console.log("[o, 0] interval:\n\t[" + intL + ", " + intSlash + "]");
     </script>
