@@ -2,14 +2,21 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style/style.css"/>
+
+    <!-- Open Graph -->
     <meta property="og:image" content="https://brynmiller.me/assets/professional.jpg"/>
+    <meta property="og:url" content="https://brynmiller.me" />
+    <meta property="og:title" content="Bryn Miller" />
+    <meta property="og:description" content="Bryn Miller's Professional Site"/>
+
+    <!-- Tab Style -->
     <link rel="icon" type="image/png" href="assets/favicon.png"/>
     <title>Bryn Miller</title>
   </head>
 
   <body>
     <header alt="Bryn Miller">
-      <a href="https://brynmiller.me">Bryn Mi<span id="lslash">ll</span>er</a>
+      <a href="https://brynmiller.me">Bryn M<span id="lslash">ill</span>er</a>
     </header>
     
     <script>
@@ -28,11 +35,10 @@
       }
       var l = document.getElementById("lslash");
       // Save intervals for debug purposes, show in dev console.
-      var toL = setInterval(() => l.innerText = "ll", intL = getRandom(2600, 3000));
-      var toSlash = setInterval(() => l.innerText = "//", intSlash = getRandom(2000, 2500));
+      var toL = setInterval(() => l.innerText = "ill", intL = getRandom(2600, 3000));
+      var toSlash = setInterval(() => l.innerText = "://", intSlash = getRandom(2000, 2500));
 
-      console.log("[i, 1] interval:\n\t[" + intI + ", " + int1 + "]");
-      console.log("[o, 0] interval:\n\t[" + intL + ", " + intSlash + "]");
+      console.log("['://', 'ill'] interval:\n\t[" + intL + ", " + intSlash + "]");
     </script>
 
     <h1>Hey there! I'm Bryn!</h1>
@@ -76,6 +82,11 @@
             <li><a href="https://brynmiller.substack.com/">Substack</a></li>
             <li><a href="https://github.com/digital-diplomat">GitHub</a></li>
           </ul>
+        </p>
+
+        <p>
+          (Also yes, I know Mozilla already did the ":// in the name" thing.
+          Just let me have this.)
         </p>
       </div>
 
