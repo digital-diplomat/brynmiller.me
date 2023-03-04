@@ -65,7 +65,7 @@ html {
 
 body {
     font-family: Ubuntu, "Helvetica Neue", sans-serif;
-    font-size: 1.25vmax;
+    font-size: 14pt;
     background: linear-gradient(45deg, var(--bg-main) 0%, var(--bg-accent) 100%);
     color: var(--main-text);
     margin: 0;
@@ -76,7 +76,7 @@ aside {
     font-family: MesloLGS, monospace;
     font-style: italic;
     color: var(--comment);
-    font-size: 1.25vmax;;
+    font-size: 14pt;
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -100,7 +100,7 @@ header {
     box-sizing: border-box;
     text-align: center;
     font-weight: bold;
-    font-size: 2.5vmax;
+    font-size: 32pt;
     color: var(--my-green);
     background-color: var(--blue);
     z-index: 100;
@@ -137,9 +137,9 @@ hr {
 }
 
 p {
-    font-size: 1.25vmax;
-    margin-top: 0.5vh;
-    margin-bottom: 2vh;
+    font-size: 14pt;
+    margin-top: 12px;
+    margin-bottom: 36px;
     margin-left: 10%;
     margin-right: 10%;
     padding-right: 64px;
@@ -150,7 +150,7 @@ pre {
     color: var(--code);
     border: dotted 1px var(--my-green);
     flex-grow: 2;
-    font-size: 1.25vmax;
+    font-size: 14pt;
     margin-top: 12px;
     margin-bottom: 36px;
     margin-left: 10%;
@@ -217,7 +217,7 @@ h1 {
     margin: 0;
     text-align: center;
     font-weight: bold;
-    font-size: 2vmax;
+    font-size: 24pt;
 }
 
 h2 {
@@ -229,11 +229,11 @@ h2 {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 48px;
-    font-size: 1.75vmax;
+    font-size: 20pt;
 }
 
 h3, ul {
-    margin-top: 1.75vmax;
+    margin-top: 24px;
     margin-bottom: 8px;
     margin-left: 10%;
     margin-right: 10%;
@@ -244,7 +244,7 @@ ul > ul {
 }
 
 li {
-    font-size: 1.25vmax;
+    font-size: 14pt;
     line-height: 150%;
     list-style-type: square;
     list-style-position: outside;
