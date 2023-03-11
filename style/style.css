@@ -32,58 +32,17 @@ html {
     src: url(./Ubuntu/Ubuntu-Regular.ttf);
 }
 
-.keyword {
-    color: var(--keyword);
-    font-weight: bold;
-}
-
-.number {
-    color: var(--number);
-}
-
-.string {
-    color: var(--string);
-}
-
-.function {
-    color: var(--function);
-}
-
-.comment {
-    font-style: italic;
-    color: var(--comment);
-}
-
-.linum {
-    color: var(--comment);
-    background-color: var(--bg-accent);
-}
-
-.prideflag {
-    font-family: MesloLGS, monospace;
+:root {
+  font-size: 2vh;
 }
 
 body {
     font-family: Ubuntu, "Helvetica Neue", sans-serif;
-    font-size: 14pt;
+    font-size: 1rem;
     background: linear-gradient(45deg, var(--bg-main) 0%, var(--bg-accent) 100%);
     color: var(--main-text);
     margin: 0;
     padding-bottom: 128px;
-}
-
-aside {
-    font-family: MesloLGS, monospace;
-    font-style: italic;
-    color: var(--comment);
-    font-size: 14pt;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-li > aside {
-    display: inline;
-    margin-left: auto;
 }
 
 /* Top Bar and Intro */
@@ -100,7 +59,7 @@ header {
     box-sizing: border-box;
     text-align: center;
     font-weight: bold;
-    font-size: 32pt;
+    font-size: 2.5rem;
     color: var(--my-green);
     background-color: var(--blue);
     z-index: 100;
@@ -115,11 +74,11 @@ hr {
 }
 
 #selfie {
-    max-width: 16%;
+    min-width: 20%;
+    max-width: 400px;
     object-fit: contain;
     border: 8px;
     margin-right: 10%;
-    flex-grow: 1;
 }
 
 /* Main Body Styling */
@@ -129,7 +88,8 @@ hr {
     display: flex;
     flex-direction: row;
     min-width: 100% !important;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .strike {
@@ -137,25 +97,11 @@ hr {
 }
 
 p {
-    font-size: 14pt;
-    margin-top: 12px;
-    margin-bottom: 36px;
+    font-size: inherit;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
     margin-left: 10%;
     margin-right: 10%;
-    padding-right: 64px;
-}
-
-pre {
-    font-family: MesloLGS, monospace;
-    color: var(--code);
-    border: dotted 1px var(--my-green);
-    flex-grow: 2;
-    font-size: 14pt;
-    margin-top: 12px;
-    margin-bottom: 36px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-right: 64px;
 }
 
 a {
@@ -217,7 +163,7 @@ h1 {
     margin: 0;
     text-align: center;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 2rem;
 }
 
 h2 {
@@ -229,7 +175,7 @@ h2 {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 48px;
-    font-size: 20pt;
+    font-size: 2rem;
 }
 
 h3, ul {
@@ -244,8 +190,8 @@ ul > ul {
 }
 
 li {
-    font-size: 14pt;
-    line-height: 150%;
+    font-size: inherit;
+    line-height: 1rem;
     list-style-type: square;
     list-style-position: outside;
     margin-left: 0%;
@@ -277,7 +223,6 @@ li {
 footer {
     font-family: MesloLGS, monospace;
     position: fixed;
-    font-size: 200%;
     min-width: 100%;
     bottom: 0;
     margin: 0;
@@ -294,7 +239,7 @@ footer {
 }
 
 footer > a > img { /* Logos */
-    height: 48px;
+    height: 6vh;
     width: auto;
     object-fit: contain;
     margin-left: 10px;
@@ -305,4 +250,23 @@ footer > a > img { /* Logos */
     margin-left: 40px;
     margin-right: 40px;
     cursor: pointer !important;
+}
+
+@media screen and (max-width: 800px) {
+
+  .content {
+    flex-direction: column-reverse;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  #selfie {
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1vh;
+    object-fit: contain;
+    border: 8px;
+  }
 }
