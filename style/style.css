@@ -200,7 +200,7 @@ li {
 
 ::marker {
     color: var(--teal);
-    font-size: 24px;
+    font-size: 1em;
 }
 
 #mas-secondary {
@@ -252,7 +252,7 @@ footer > a > img { /* Logos */
     cursor: pointer !important;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-aspect-ratio: 1 / 1) {
 
   .content {
     flex-direction: column-reverse;
@@ -268,5 +268,24 @@ footer > a > img { /* Logos */
     margin-bottom: 1vh;
     object-fit: contain;
     border: 8px;
+  }
+  
+  li {
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 1em;
+  }
+  
+  li.top-level {
+    background: var(--teal);
+  }
+  
+  ul {
+    padding-inline-start: 0px;
+  }
+  
+  ::marker {
+    color: var(--main-text);
+    font-size: 1em;
   }
 }
