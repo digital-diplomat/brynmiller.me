@@ -89,7 +89,7 @@ hr {
     flex-direction: row;
     min-width: 100% !important;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .strike {
